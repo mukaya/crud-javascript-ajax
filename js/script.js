@@ -21,6 +21,9 @@ const employees = [];
 const genererUnMatricule = ()=>{
     return  Math.round(Math.random() * 1000000000);
 };
+if(!nom.value.length){
+
+}
 btn.addEventListener('click',(event)=>{
     tbody.innerHTML= '';
     event.preventDefault();
