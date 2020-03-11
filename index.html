@@ -100,9 +100,9 @@
                 </div>
                 <div class="col">
                   <input
-                    type="number"
+                    type="text"
                     class="form-control"
-                    placeholder="Votre payes d'origine"
+                    placeholder="Votre pays d'origine"
                     name="pays"
                     id="pays"
                   />
@@ -111,12 +111,37 @@
               </div><br/>
               <div class="row">
                   <div class="col">
-                    <button type="submit" class="btn btn-primary center">VALIDER</button>
+                    <button type="submit" class="btn btn-primary center" id="btn">VALIDER</button>
                   </div>
               </div>
           </form>
         </div>
       </div>
+      <div class="card text-center mt-3">
+        <div class="card-header">
+          LISTE DES EMPLOYEES
+        </div>
+        <div class="card-body">
+            <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"># MATRICULE</th>
+                    <th scope="col">NOM</th>
+                    <th scope="col">PRENOM</th>
+                    <th scope="col">MAIL</th>
+                    <th scope="col">AGE</th>
+                    <th scope="col">POSTE</th>
+                    <th scope="col">NUMERO</th>
+                    <th scope="col">STATUT</th>
+                    <th scope="col">PAYS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                </tbody>
+              </table>
+        </div>
+      </div>
     </div>
+    <script src="js/script.js" async></script>
   </body>
 </html>
