@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
+    <title>Faire un CRUD avec Javascript en Utilisant AJAX</title>
+  </head>
+  <body>
+    <div class="container mt-3">
+      <div class="card text-center">
+        <div class="card-header">
+          FORMULAIRE
+        </div>
+        <div class="card-body">
+          <form>
+            <div class="row">
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Votre nom"
+                  name="nom"
+                  id="nom"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Votre prénom"
+                  name="prenom"
+                  id="prenom"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="col">
+                <input
+                  type="mail"
+                  class="form-control"
+                  placeholder="Votre adresse mail"
+                  name="mail"
+                  id="mail"
+                />
+                <span class="error"></span>
+              </div>
+              <div class="col">
+                <input
+                  type="number"
+                  class="form-control"
+                  placeholder="Votre age"
+                  name="age"
+                  id="age"
+                />
+                <span class="error"></span>
+              </div>
+            </div><br/>
+            <div class="row">
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre poste"
+                    name="poste"
+                    id="poste"
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre numéro de télepgone"
+                    name="telephone"
+                    id="telephone"
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="col">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Votre statut marital"
+                    name="statut"
+                    id="statut"
+                  />
+                  <span class="error"></span>
+                </div>
+                <div class="col">
+                  <input
+                    type="number"
+                    class="form-control"
+                    placeholder="Votre payes d'origine"
+                    name="pays"
+                    id="pays"
+                  />
+                  <span class="error"></span>
+                </div>             
+              </div><br/>
+              <div class="row">
+                  <div class="col">
+                    <button type="submit" class="btn btn-primary center">VALIDER</button>
+                  </div>
+              </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
