@@ -24,47 +24,46 @@
           FORMULAIRE
         </div>
         <div class="card-body">
-          <form>
+          <form autocomplete="off" id="form">
             <div class="row">
               <div class="col">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Votre nom"
+                  placeholder="*Votre nom"
                   name="nom"
                   id="nom"
                 />
-                <span class="error" id="errorNom"></span>
+                <span></span>
               </div>
               <div class="col">
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Votre prénom"
+                  placeholder="*Votre prénom"
                   name="prenom"
                   id="prenom"
                 />
-                <span class="error" id="errorPrenom"></span>
+                <span></span>
               </div>
               <div class="col">
                 <input
                   type="mail"
                   class="form-control"
-                  placeholder="Votre adresse mail"
+                  placeholder="*Votre adresse mail"
                   name="mail"
                   id="mail"
                 />
-                <span class="error" id="errorMail"></span>
+                <span></span>
               </div>
               <div class="col">
                 <input
                   type="number"
-                  class="form-control"
+                  class="form-control age"
                   placeholder="Votre age"
                   name="age"
                   id="age"
                 />
-                <span class="error"></span>
               </div>
             </div><br/>
             <div class="row">
@@ -72,41 +71,41 @@
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre poste"
+                    placeholder="*Votre poste"
                     name="poste"
                     id="poste"
                   />
-                  <span class="error" id="errorPoste"></span>
+                  <span></span>
                 </div>
                 <div class="col">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre numéro de télepgone"
+                    placeholder="*Votre numéro de télepgone"
                     name="telephone"
                     id="telephone"
                   />
-                  <span class="error" id="errorTelephone"></span>
+                  <span></span>
                 </div>
                 <div class="col">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre statut marital"
+                    placeholder="*Votre statut marital"
                     name="statut"
                     id="statut"
                   />
-                  <span class="error" id="errorStatut"></span>
+                  <span></span>
                 </div>
                 <div class="col">
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre pays d'origine"
+                    placeholder="*Votre pays d'origine"
                     name="pays"
                     id="pays"
                   />
-                  <span class="error" id="errorPays"></span>
+                  <span></span>
                 </div>             
               </div><br/>
               <div class="row">
@@ -142,6 +141,6 @@
         </div>
       </div>
     </div>
-    <script src="js/script.js" async></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
