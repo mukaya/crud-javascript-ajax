@@ -11,9 +11,9 @@
       crossorigin="anonymous"
     />
     <style>
-        .error{
-            color: red;
-        }
+      .error {
+        color: red;
+      }
     </style>
     <title>Faire un CRUD avec Javascript en Utilisant AJAX</title>
   </head>
@@ -24,7 +24,7 @@
           FORMULAIRE
         </div>
         <div class="card-body">
-          <form autocomplete="off" id="form">
+          <form autocomplete="off" method="post">
             <div class="row">
               <div class="col">
                 <input
@@ -34,7 +34,6 @@
                   name="nom"
                   id="nom"
                 />
-                <span></span>
               </div>
               <div class="col">
                 <input
@@ -44,7 +43,6 @@
                   name="prenom"
                   id="prenom"
                 />
-                <span></span>
               </div>
               <div class="col">
                 <input
@@ -54,7 +52,6 @@
                   name="mail"
                   id="mail"
                 />
-                <span></span>
               </div>
               <div class="col">
                 <input
@@ -65,54 +62,54 @@
                   id="age"
                 />
               </div>
-            </div><br/>
+            </div>
+            <br />
             <div class="row">
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="*Votre poste"
-                    name="poste"
-                    id="poste"
-                  />
-                  <span></span>
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="*Votre numéro de télepgone"
-                    name="telephone"
-                    id="telephone"
-                  />
-                  <span></span>
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="*Votre statut marital"
-                    name="statut"
-                    id="statut"
-                  />
-                  <span></span>
-                </div>
-                <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="*Votre pays d'origine"
-                    name="pays"
-                    id="pays"
-                  />
-                  <span></span>
-                </div>             
-              </div><br/>
-              <div class="row">
-                  <div class="col">
-                    <button type="submit" class="btn btn-primary center" id="btn">VALIDER</button>
-                  </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="*Votre poste"
+                  name="poste"
+                  id="poste"
+                />
               </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="*Votre numéro de télepgone"
+                  name="telephone"
+                  id="telephone"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="*Votre statut marital"
+                  name="statut"
+                  id="statut"
+                />
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="*Votre pays d'origine"
+                  name="pays"
+                  id="pays"
+                />
+              </div>
+            </div>
+            <br />
+            <div class="row">
+              <div>
+                <button type="submit" class="btn btn-primary center" id="btn">
+                  VALIDER
+                </button>
+              </div>
+            </div>
           </form>
         </div>
       </div>
@@ -121,23 +118,22 @@
           LISTE DES EMPLOYEES
         </div>
         <div class="card-body">
-            <table class="table">
-                <thead>
-                  <tr>
-                    <th scope="col"># MATRICULE</th>
-                    <th scope="col">NOM</th>
-                    <th scope="col">PRENOM</th>
-                    <th scope="col">MAIL</th>
-                    <th scope="col">AGE</th>
-                    <th scope="col">POSTE</th>
-                    <th scope="col">NUMERO</th>
-                    <th scope="col">STATUT</th>
-                    <th scope="col">PAYS</th>
-                  </tr>
-                </thead>
-                <tbody>
-                </tbody>
-              </table>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"># MATRICULE</th>
+                <th scope="col">NOM</th>
+                <th scope="col">PRENOM</th>
+                <th scope="col">MAIL</th>
+                <th scope="col">AGE</th>
+                <th scope="col">POSTE</th>
+                <th scope="col">NUMERO</th>
+                <th scope="col">STATUT</th>
+                <th scope="col">PAYS</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </div>
     </div>
