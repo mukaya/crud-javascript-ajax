@@ -24,7 +24,7 @@
           FORMULAIRE
         </div>
         <div class="card-body">
-          <form autocomplete="off" method="post">
+          <form autocomplete="off" method="post" onsubmit="event.preventDefault();onFormSubmit();">
             <div class="row">
               <div class="col">
                 <input
@@ -104,9 +104,9 @@
             </div>
             <br />
             <div class="row">
-              <div>
+              <div class="col">
                 <button type="submit" class="btn btn-primary center" id="btn">
-                  VALIDER
+                  Ajouter
                 </button>
               </div>
             </div>
@@ -118,7 +118,7 @@
           LISTE DES EMPLOYEES
         </div>
         <div class="card-body">
-          <table class="table">
+          <table class="table" id="employeeList">
             <thead>
               <tr>
                 <th scope="col"># MATRICULE</th>
@@ -130,6 +130,7 @@
                 <th scope="col">NUMERO</th>
                 <th scope="col">STATUT</th>
                 <th scope="col">PAYS</th>
+                <th scope="col">ACTION</th>
               </tr>
             </thead>
             <tbody></tbody>
