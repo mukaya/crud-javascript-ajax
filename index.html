@@ -18,7 +18,7 @@
     <title>Faire un CRUD avec Javascript en Utilisant AJAX</title>
   </head>
   <body>
-    <div class="container mt-3">
+    <div class="container-fluid mt-3">
       <div class="card text-center">
         <div class="card-header">
           FORMULAIRE
@@ -53,15 +53,6 @@
                   id="mail"
                 />
               </div>
-              <div class="col">
-                <input
-                  type="number"
-                  class="form-control age"
-                  placeholder="Votre age"
-                  name="age"
-                  id="age"
-                />
-              </div>
             </div>
             <br />
             <div class="row">
@@ -74,15 +65,7 @@
                   id="poste"
                 />
               </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="*Votre numéro de télepgone"
-                  name="telephone"
-                  id="telephone"
-                />
-              </div>
+             
               <div class="col">
                 <input
                   type="text"
@@ -118,18 +101,16 @@
           LISTE DES EMPLOYEES
         </div>
         <div class="card-body">
-          <table class="table" id="employeeList">
+          <table class="table-bordered" id="employeeList">
             <thead>
               <tr>
                 <th scope="col"># MATRICULE</th>
                 <th scope="col">NOM</th>
                 <th scope="col">PRENOM</th>
-                <th scope="col">MAIL</th>
-                <th scope="col">AGE</th>
-                <th scope="col">POSTE</th>
-                <th scope="col">NUMERO</th>
-                <th scope="col">STATUT</th>
+                <th scope="col">MARIE</th>
                 <th scope="col">PAYS</th>
+                <th scope="col">EMAIL</th>
+                <th scope="col">POSTE</th>
                 <th scope="col">ACTION</th>
               </tr>
             </thead>
@@ -138,6 +119,7 @@
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
