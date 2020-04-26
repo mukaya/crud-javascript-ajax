@@ -14,17 +14,24 @@
       .error {
         color: red;
       }
+      .titre{
+        color: white;
+        margin: 0 auto;
+      }
     </style>
     <title>Faire un CRUD avec Javascript en Utilisant AJAX</title>
   </head>
   <body>
+    <nav class="navbar navbar-dark bg-dark">
+     <h1 class="titre">MAPENDO SARL</h1>
+    </nav>
     <div class="container-fluid mt-3">
       <div class="card text-center">
         <div class="card-header">
           FORMULAIRE
         </div>
         <div class="card-body">
-          <form autocomplete="off" method="post" onsubmit="event.preventDefault();onFormSubmit();">
+          <form autocomplete="off">
             <div class="row">
               <div class="col">
                 <input
@@ -33,6 +40,7 @@
                   placeholder="*Votre nom"
                   name="nom"
                   id="nom"
+                  value=""
                 />
               </div>
               <div class="col">
@@ -42,6 +50,7 @@
                   placeholder="*Votre prénom"
                   name="prenom"
                   id="prenom"
+                  value=""
                 />
               </div>
               <div class="col">
@@ -51,6 +60,7 @@
                   placeholder="*Votre adresse mail"
                   name="mail"
                   id="mail"
+                  value=""
                 />
               </div>
             </div>
@@ -63,6 +73,7 @@
                   placeholder="*Votre poste"
                   name="poste"
                   id="poste"
+                  value=""
                 />
               </div>
              
@@ -73,6 +84,7 @@
                   placeholder="*Votre statut marital"
                   name="statut"
                   id="statut"
+                  value=""
                 />
               </div>
               <div class="col">
@@ -82,10 +94,24 @@
                   placeholder="*Votre pays d'origine"
                   name="pays"
                   id="pays"
+                  value=""
                 />
               </div>
             </div>
             <br />
+            <div class="row">
+              <div class="col">
+                <input
+                type="text"
+                class="form-control"
+                placeholder="*Votre numéro de telephone"
+                name="numeroTelephone"
+                id="numeroTelephone"
+                value=""
+              />
+              </div>
+            </div>
+            <br/>
             <div class="row">
               <div class="col">
                 <button type="submit" class="btn btn-primary center" id="btn">
