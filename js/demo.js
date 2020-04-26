@@ -48,7 +48,7 @@ function readFormData() {
     .then((response) => {
       datas = response.data;
       for (let i = 0; i < datas.length; i++) {
-        let tr = `
+      let tr = `
       <tr>
         <td>${datas[i]._id}</td>
         <td>${datas[i].nom}</td>

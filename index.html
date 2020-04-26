@@ -31,7 +31,7 @@
           FORMULAIRE
         </div>
         <div class="card-body">
-          <form autocomplete="off">
+          <form autocomplete="on" id="form">
             <div class="row">
               <div class="col">
                 <input
@@ -41,6 +41,7 @@
                   name="nom"
                   id="nom"
                   value=""
+                  required
                 />
               </div>
               <div class="col">
@@ -51,6 +52,7 @@
                   name="prenom"
                   id="prenom"
                   value=""
+                  required
                 />
               </div>
               <div class="col">
@@ -58,8 +60,8 @@
                   type="mail"
                   class="form-control"
                   placeholder="*Votre adresse mail"
-                  name="mail"
-                  id="mail"
+                  name="email"
+                  id="email"
                   value=""
                 />
               </div>
@@ -74,18 +76,15 @@
                   name="poste"
                   id="poste"
                   value=""
+                  required
                 />
               </div>
              
               <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="*Votre statut marital"
-                  name="statut"
-                  id="statut"
-                  value=""
-                />
+                <select class="form-control" id="estMarie" name="estMarie" value="" required>
+                  <option value="true">Oui</option>
+                  <option value="false">Non</option>
+                </select>
               </div>
               <div class="col">
                 <input
@@ -95,6 +94,7 @@
                   name="pays"
                   id="pays"
                   value=""
+                  required
                 />
               </div>
             </div>
@@ -133,10 +133,11 @@
                 <th scope="col"># MATRICULE</th>
                 <th scope="col">NOM</th>
                 <th scope="col">PRENOM</th>
-                <th scope="col">MARIE</th>
-                <th scope="col">PAYS</th>
                 <th scope="col">EMAIL</th>
                 <th scope="col">POSTE</th>
+                <th scope="col">NUMERO DE TELEPHONE</th>
+                <th scope="col">MARIE</th>
+                <th scope="col">PAYS</th>
                 <th scope="col">ACTION</th>
               </tr>
             </thead>
