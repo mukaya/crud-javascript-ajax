@@ -32,6 +32,7 @@
         </div>
         <div class="card-body">
           <form autocomplete="on" id="form">
+            <input type="hidden" name="_id" id="_id" value="">
             <div class="row">
               <div class="col">
                 <input
@@ -43,6 +44,7 @@
                   value=""
                   required
                 />
+                <small id="nomError" class="error error-danger"></small>
               </div>
               <div class="col">
                 <input
@@ -54,6 +56,7 @@
                   value=""
                   required
                 />
+                <small id="prenomError" class="error error-danger"></small>
               </div>
               <div class="col">
                 <input
@@ -72,31 +75,33 @@
                 <input
                   type="text"
                   class="form-control"
+                  placeholder="*Votre pays d'origine"
+                  id="pays"
+                  name="pays"
+                  value=""
+                  required
+                />
+                <small id="paysError" class="error error-danger"></small>
+              </div>
+              <div class="col">
+                <input
+                  type="text"
+                  class="form-control"
                   placeholder="*Votre poste"
                   name="poste"
                   id="poste"
                   value=""
                   required
                 />
-              </div>
-             
+                <small id="posteError" class="error error-danger"></small>
+              </div> 
               <div class="col">
                 <select class="form-control" id="estMarie" name="estMarie" value="" required>
                   <option value="true">Oui</option>
                   <option value="false">Non</option>
                 </select>
-              </div>
-              <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="*Votre pays d'origine"
-                  name="pays"
-                  id="pays"
-                  value=""
-                  required
-                />
-              </div>
+                <small id="estMarieError" class="error error-danger"></small>
+              </div>         
             </div>
             <br />
             <div class="row">

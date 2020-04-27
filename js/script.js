@@ -58,9 +58,9 @@ function showAllEmployesDeleteAndUpdate(employe){
   //delete employe
   detete.addEventListener("click", (event) => {
     event.preventDefault();
+    tbody.innerHTML = "";
     const confirmation = confirm("Tu es sur de supprimer cette enregistrement");
     if (confirmation){
-      event.preventDefault();
       deleteEmploye(employe)
     }
   });
@@ -79,12 +79,14 @@ function showAllEmployesDeleteAndUpdate(employe){
   btn.addEventListener('click',(event)=>{
     event.preventDefault();
     tbody.innerHTML = "";
-    if(btn.textContent === "Modifier"){
-      event.preventDefault();
-      updateEmploye(employe);
-    }else{
-     event.preventDefault();
-     addEmploye();
+    event.preventDefault();
+    if(validerChampsFormulaire(form)){
+      if(btn.textContent === "Modifier"){
+        event.preventDefault();
+        updateEmploye(document.querySelector('#_id').value);
+      }else{
+        addEmploye();
+      }
     }
   });
 
@@ -106,6 +108,13 @@ function showAllEmployesDeleteAndUpdate(employe){
       tbody.innerHTML = " ";
       alert("L'employé ajouté avec succèss");
       getAllEmployes();
+      nom.value = "";
+      prenom.value = "";
+      email.value = "";
+      poste.value = "";
+      estMarie.value = "";
+      pays.value = "";
+      numeroTelephone.value = "";
     })
     .catch((error)=>{
       alert('Une erreur est survenue');
@@ -120,7 +129,7 @@ function showAllEmployesDeleteAndUpdate(employe){
   )
   .then((res) => {
     console.log(res.data);
-    alert('Supprimer avec succes');
+    alert('Suppression reussit avec succes');
     getAllEmployes();
   })
   .catch((err) => {
@@ -130,6 +139,7 @@ function showAllEmployesDeleteAndUpdate(employe){
  }
 
  function remplirChamps(employe){
+  _id.value = employe._id;
   nom.value = employe.nom;
   prenom.value = employe.prenom;
   email.value = employe.email;
@@ -140,10 +150,10 @@ function showAllEmployesDeleteAndUpdate(employe){
  }
  
  //update
-function updateEmploye(employe){
+function updateEmploye(employeId){
   axios({
     method:'put',
-    url: `http://167.71.45.243:4000/api/employes/${employe._id}?api_key=ulkzedq`,
+    url: `http://167.71.45.243:4000/api/employes/${employeId}?api_key=ulkzedq`,
     data: {
       nom: nom.value,
       prenom: prenom.value,
@@ -157,10 +167,34 @@ function updateEmploye(employe){
   .then((response)=>{
     alert("Modification reussit");
     getAllEmployes();
+      nom.value = "";
+      prenom.value = "";
+      email.value = "";
+      poste.value = "";
+      estMarie.value = "";
+      pays.value = "";
+      numeroTelephone.value = "";
+      btn.textContent = "Ajouter"
   })
   .catch((error)=>{
     alert('Echec de modification');
     console.log(error.response);
   })
+}
+
+function validerChampsFormulaire(form) {
+  let error;
+  for (let input of form) {
+    if (input.required) {
+      error = document.getElementById(`${input.name}Error`);
+      if (input.value === "") {
+        error.textContent = `Le champ "${input.name}" est obligatoire`;
+         return getAllEmployes();
+      } else {
+        error.textContent = "";
+      }
+    }
+  }
+  return error.textContent === "" ? true : false;
 }
 
