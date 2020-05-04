@@ -35,10 +35,10 @@
             <input type="hidden" name="_id" id="_id" value="">
             <div class="row">
               <div class="col">
+                <label for="nom">NOM</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="*Votre nom"
                   name="nom"
                   id="nom"
                   value=""
@@ -47,10 +47,10 @@
                 <small id="nomError" class="error error-danger"></small>
               </div>
               <div class="col">
+                <label for="prenom">PRENOM</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="*Votre prénom"
                   name="prenom"
                   id="prenom"
                   value=""
@@ -59,10 +59,10 @@
                 <small id="prenomError" class="error error-danger"></small>
               </div>
               <div class="col">
+                <label for="mail">VOTRE EMAIL</label>
                 <input
                   type="mail"
                   class="form-control"
-                  placeholder="*Votre adresse mail"
                   name="email"
                   id="email"
                   value=""
@@ -72,22 +72,22 @@
             <br />
             <div class="row">
               <div class="col">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="*Votre pays d'origine"
-                  id="pays"
-                  name="pays"
-                  value=""
-                  required
-                />
+                <label for="pays">PAYS</label>
+                <select name="pays" id="pays" class="form-control">
+                  <option value="RDC">RDC</option>
+                  <option value="FRANCE">FRANCE</option>
+                  <option value="GABON">GABON</option>
+                  <option value="LYBIE">LYBIE</option>
+                  <option value="COTE D'IVOIRE">COTE D'IVOIRE</option>
+                  <option value="ZAMBIE">ZAMBIE</option>
+                </select>
                 <small id="paysError" class="error error-danger"></small>
               </div>
               <div class="col">
+                <label for="poste">POSTE</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="*Votre poste"
                   name="poste"
                   id="poste"
                   value=""
@@ -96,6 +96,7 @@
                 <small id="posteError" class="error error-danger"></small>
               </div> 
               <div class="col">
+                <label for="estMarie"> STATUT MARITAL</label>
                 <select class="form-control" id="estMarie" name="estMarie" value="" required>
                   <option value="true">Oui</option>
                   <option value="false">Non</option>
@@ -106,10 +107,10 @@
             <br />
             <div class="row">
               <div class="col">
+                <label for="numeroTelephone">TELEPHONE</label>
                 <input
                 type="text"
                 class="form-control"
-                placeholder="*Votre numéro de telephone"
                 name="numeroTelephone"
                 id="numeroTelephone"
                 value=""
