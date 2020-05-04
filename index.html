@@ -34,40 +34,40 @@
           <form>
             <div class="row">
               <div class="col">
+                <label for="nom">NOM</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Votre nom"
                   name="nom"
                   id="nom"
                 />
                 <span class="error"></span>
               </div>
               <div class="col">
+                <label for="prenom">PRENOM</label>
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Votre prénom"
                   name="prenom"
                   id="prenom"
                 />
                 <span class="error"></span>
               </div>
               <div class="col">
+                <label for="mail">EMAIL</label>
                 <input
                   type="mail"
                   class="form-control"
-                  placeholder="Votre adresse mail"
                   name="mail"
                   id="mail"
                 />
                 <span class="error"></span>
               </div>
               <div class="col">
+                <label for="age">AGE</label>
                 <input
                   type="number"
                   class="form-control"
-                  placeholder="Votre age"
                   name="age"
                   id="age"
                 />
@@ -76,43 +76,41 @@
             </div><br/>
             <div class="row">
                 <div class="col">
+                  <label for="poste">POSTE</label>
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre poste"
                     name="poste"
                     id="poste"
                   />
                   <span class="error"></span>
                 </div>
                 <div class="col">
+                  <label for="telephone">TELEPHONE</label>
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="Votre numéro de télepgone"
                     name="telephone"
                     id="telephone"
                   />
                   <span class="error"></span>
                 </div>
                 <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Votre statut marital"
-                    name="statut"
-                    id="statut"
-                  />
+                  <label for="statut">STATUT MARITAL</label>
+                  <select name="statut" id="statut" class="form-control">
+                    <option value="true">OUI</option>
+                    <option value="false">NOM</option>
+                  </select>
                   <span class="error"></span>
                 </div>
                 <div class="col">
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="Votre pays d'origine"
-                    name="pays"
-                    id="pays"
-                  />
+                  <label for="pays">PAYS</label>
+                  <select name="pays" id="pays" class="form-control">
+                    <option value="RDC">RDC</option>
+                    <option value="GABON">GABON</option>
+                    <option value="FRANCE">FRANCE</option>
+                    <option value="ZAMBIE">ZAMBIE</option>
+                  </select>
                   <span class="error"></span>
                 </div>             
               </div><br/>
